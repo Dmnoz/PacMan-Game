@@ -1,0 +1,95 @@
+from HTML.
+<!--<div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="pacman"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="empty"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="empty"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+    </div>-->
+var pacman2 ={
+    x:2,
+    y:1
+};
+
+var direction2= "right";
+
+function displayPacman2(){
+    var object2= document.getElementById('pacman2');
+    object2.style.top = pacman2.y*30+"px";
+    object2.style.left = pacman2.x*30+"px";
+    object2.style.backgroundImage = "url('images/pacman2-"+direction2+".gif')";
+}
+    displayPacman2();
+document.onkeydown =function(j){
+    //console.log(e.keyCode);
+    if(j.keyCode == 65 && world[pacman2.y][pacman2.x-1]!=1){
+        pacman2.x --;
+        direction2="left";
+    }
+    else if(j.keyCode == 68 && world[pacman2.y][pacman2.x+1]!=1){
+        pacman2.x ++;
+        direction2="right";
+    }
+    else if(j.keyCode == 87 && world[pacman2.y-1][pacman2.x]!=1){
+        pacman2.y --;
+        direction2="up";
+    }
+    else if(j.keyCode == 83 && world[pacman2.y+1][pacman2.x]!=1){
+        pacman2.y ++;
+        direction2="down";
+    }
+    displayPacman2();
+}

@@ -1,0 +1,160 @@
+*{
+    padding:0px;
+    margin:0px;
+    border:0px;
+    background-color: black;
+
+}
+#world {
+    position:relative;
+}
+.brick {
+    width:30px;
+    height:30px;
+    background-color: slateblue;
+}
+.row {
+    display:flex;
+    flex-direction: row;
+}
+.coin {
+    background: url("images/dot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+}
+.cherry {
+    background: url("images/cherry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+}
+#pacman {
+    background-image: url("images/pacman-right.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position:absolute;
+}
+#pacman2 {
+    background-image: url("images/pacman2-right.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position:absolute;
+}
+
+#red {
+    background-image: url("images/red.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position:absolute; /*modificar si es un html*/
+}
+#green {
+    background-image: url("images/green3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position:absolute; /*modificar si es un html*/
+}
+.empty {
+    width: 30px;
+    height:30px;
+    background-color: black;
+}
+
+#score {
+    border:1px solid white;
+    width: 120px;
+    height: 60px;
+    color: white;
+    padding:10px;
+    position: absolute;
+    top: 800px;
+    left:20px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+#score_n{
+    margin-top: 10px;
+    font-size: 30px;
+}
+#life {
+    border:1px solid red;
+    width: 120px;
+    height: 60px;
+    color: red;
+    padding:10px;
+    position: absolute;
+    top: 800px;
+    left:200px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+#lifes_n {
+    margin-top: 10px;
+    font-size: 30px;;
+}
+#scorep2 {
+    border:1px solid white;
+    width: 120px;
+    height: 60px;
+    color: white;
+    padding:10px;
+    position: absolute;
+    top: 900px;
+    left:20px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+#score_np2{
+    margin-top: 10px;
+    font-size: 30px;
+}
+#lifep2 {
+    border:1px solid red;
+    width: 120px;
+    height: 60px;
+    color: red;
+    padding:10px;
+    position: absolute;
+    top: 900px;
+    left:200px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+#lifes_np2 {
+    margin-top: 10px;
+    font-size: 30px;;
+}
+
+#GameOver {
+    border:1px solid white;
+    width: 400px;
+    height: 100px;
+    color: yellow;
+    padding-top:50px;
+    position: absolute;
+    top: 200px;
+    left:200px;
+    text-align: center;
+    font-size: 60px;
+    z-index: -1;
+}
